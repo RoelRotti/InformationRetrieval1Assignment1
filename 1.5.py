@@ -1,4 +1,6 @@
 # TODO: Implement this! (3 points)
+from nltk.stem import PorterStemmer
+
 def stem_token(token):
     """
         Stems the given token using the PorterStemmer from the nltk library
@@ -6,4 +8,6 @@ def stem_token(token):
         Output: the stem of the token
     """
     # YOUR CODE HERE
-    raise NotImplementedError()
+    ps = PorterStemmer()
+    output = ps.stem(token)
+    return output
