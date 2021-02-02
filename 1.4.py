@@ -1,4 +1,5 @@
 # TODO: Implement this! (4 points)
+from nltk.tokenize import WordPunctTokenizer
 def tokenize(text):
     """
         Tokenizes the input text. Use the WordPunctTokenizer
@@ -6,4 +7,6 @@ def tokenize(text):
         Output: a list of tokens
     """
     # YOUR CODE HERE
-    raise NotImplementedError()
+    tk = WordPunctTokenizer() 
+    output = tk.tokenize(text)
+    return output
